@@ -3,6 +3,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
+    path: '/iniciar-sesion',
+    name: 'signin',
+    component: () => import('@/views/SignIn.vue'),
+  },
+  {
     path: '/',
     component: () => import('@/layouts/default/Default.vue'),
     children: [
